@@ -1,0 +1,13 @@
+---
+- name: Install Docker, docker-machine, docker-compose, and the Python docker libs on a clean system
+  hosts: all
+  connection: local
+  become: true
+  vars:
+    dockermachine_install_dir: /usr/bin
+    docker_install_compose: true
+  roles:
+    - geerlingguy.docker
+    - andrewrothstein.docker-machine
+  tasks:
+    - pip: name=docker
