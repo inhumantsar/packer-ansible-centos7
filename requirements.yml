@@ -1,2 +1,3 @@
+- src: inhumantsar.local-user
 - src: geerlingguy.docker
 - src: andrewrothstein.docker-machine
